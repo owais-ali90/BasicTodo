@@ -17,7 +17,7 @@ export default function App() {
   const [inputContent, setInputContent] = useState('')
 
   function addTodo(){
-    if(inputContent === ''){
+    if(inputContent.trim() === ''){
       return
     }
     else if(isEditing){
